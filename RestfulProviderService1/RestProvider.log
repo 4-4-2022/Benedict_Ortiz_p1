@@ -302,3 +302,39 @@
 08:53:54.735 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 08:53:54.737 [restartedMain] INFO  c.b.RestfulProviderService1Application - Started RestfulProviderService1Application in 0.578 seconds (JVM running for 4354.499)
 08:53:54.737 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+09:45:49.225 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:45:49.225 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09:45:49.225 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+09:45:49.229 [http-nio-8080-exec-1] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package findAllLOLChampions
+09:46:05.007 [http-nio-8080-exec-4] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package saveLOLChampion
+09:46:07.489 [http-nio-8080-exec-5] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package findAllLOLChampions
+09:46:09.509 [http-nio-8080-exec-3] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package getSingleChampion
+09:46:19.498 [http-nio-8080-exec-6] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package updateLOLChampion
+09:46:22.298 [http-nio-8080-exec-8] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package deleteChampion
+09:46:24.196 [http-nio-8080-exec-7] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package findAllLOLChampions
+09:57:41.019 [http-nio-8080-exec-9] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package saveLOLChampion
+09:57:44.135 [http-nio-8080-exec-2] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package findAllLOLChampions
+09:57:47.635 [http-nio-8080-exec-1] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package getSingleChampion
+09:57:51.608 [http-nio-8080-exec-4] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package updateLOLChampion
+09:57:54.338 [http-nio-8080-exec-5] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package deleteChampion
+09:57:58.626 [http-nio-8080-exec-3] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package findAllLOLChampions
+10:39:32.746 [http-nio-8080-exec-8] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package saveLOLChampion
+10:39:45.388 [http-nio-8080-exec-10] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package findAllLOLChampions
+10:40:04.621 [http-nio-8080-exec-9] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package getSingleChampion
+10:40:20.487 [http-nio-8080-exec-2] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package updateLOLChampion
+10:40:28.913 [http-nio-8080-exec-1] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package getSingleChampion
+10:40:40.903 [http-nio-8080-exec-4] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package deleteChampion
+10:40:50.573 [http-nio-8080-exec-5] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package findAllLOLChampions
+10:43:11.074 [http-nio-8080-exec-6] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package findAllLOLChampions
+10:43:34.686 [http-nio-8080-exec-7] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package saveLOLChampion
+10:43:42.657 [http-nio-8080-exec-8] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package findAllLOLChampions
+10:43:54.776 [http-nio-8080-exec-10] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package getSingleChampion
+10:44:18.208 [http-nio-8080-exec-9] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package updateLOLChampion
+10:44:25.166 [http-nio-8080-exec-2] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package findAllLOLChampions
+10:44:38.078 [http-nio-8080-exec-1] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package deleteChampion
+10:44:44.661 [http-nio-8080-exec-4] INFO  com.ben.util.LoggingAspect - RestProviderService1 before service package findAllLOLChampions
+13:52:21.267 [HikariPool-9 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-9 - Thread starvation or clock leap detected (housekeeper delta=5m19s153ms773µs).
+16:26:36.820 [RMI TCP Connection(528)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+16:26:36.851 [RMI TCP Connection(528)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16:26:36.856 [RMI TCP Connection(528)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
+16:26:36.858 [RMI TCP Connection(528)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.

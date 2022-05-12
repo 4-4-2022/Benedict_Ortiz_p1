@@ -4353,3 +4353,240 @@ Unconditional classes:
 08:55:44.735 [http-nio-6060-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
 08:55:44.736 [http-nio-6060-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[ValoAgent [id=2, valoName=Jett], ValoAgent [id=3, valoName=Viper]]]
 08:55:44.763 [http-nio-6060-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+09:12:26.537 [http-nio-6060-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/valoagent/getall", parameters={}
+09:12:26.538 [http-nio-6060-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.ValoAgentController#getSoapMessage()
+09:12:26.538 [http-nio-6060-exec-6] INFO  com.ben.util.LoggingAspect - controller getSoapMessage
+09:12:26.823 [http-nio-6060-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+09:12:26.823 [http-nio-6060-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[ValoAgent [id=2, valoName=Jett], ValoAgent [id=3, valoName=Viper]]]
+09:12:26.823 [http-nio-6060-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+09:57:40.959 [http-nio-6060-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - POST "/lolchampion/new", parameters={}
+09:57:40.960 [http-nio-6060-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.LOLChampionController#saveLOLChampion(LOLChampion)
+09:57:40.995 [http-nio-6060-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LOLChampion [id=1, champName=Fizz]]
+09:57:40.995 [http-nio-6060-exec-8] INFO  com.ben.util.LoggingAspect - controller saveLOLChampion
+09:57:41.014 [http-nio-6060-exec-8] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/leagueOfLegends/postChampion
+09:57:41.016 [http-nio-6060-exec-8] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+09:57:41.016 [http-nio-6060-exec-8] DEBUG o.s.web.client.RestTemplate - Writing [LOLChampion [id=1, champName=Fizz]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+09:57:41.085 [http-nio-6060-exec-8] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+09:57:41.085 [http-nio-6060-exec-8] DEBUG o.s.web.client.RestTemplate - Reading to [com.ben.model.LOLChampion]
+09:57:41.094 [http-nio-6060-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+09:57:41.094 [http-nio-6060-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [LOLChampion [id=1, champName=Fizz]]
+09:57:41.095 [http-nio-6060-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+09:57:44.135 [http-nio-6060-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/lolchampion/getall", parameters={}
+09:57:44.135 [http-nio-6060-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.LOLChampionController#getAllLOLChampion()
+09:57:44.135 [http-nio-6060-exec-9] INFO  com.ben.util.LoggingAspect - controller getAllLOLChampion
+09:57:44.135 [http-nio-6060-exec-9] DEBUG o.s.web.client.RestTemplate - HTTP GET http://localhost:8080/leagueOfLegends/champions/
+09:57:44.135 [http-nio-6060-exec-9] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+09:57:44.186 [http-nio-6060-exec-9] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+09:57:44.186 [http-nio-6060-exec-9] DEBUG o.s.web.client.RestTemplate - Reading to [java.util.List<?>]
+09:57:44.186 [http-nio-6060-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+09:57:44.186 [http-nio-6060-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[{id=4, champName=Jax}, {id=3, champName=Ornn}, {id=2, champName=Ashe}, {id=5, champName=Aatrox}, {i (truncated)...]
+09:57:44.186 [http-nio-6060-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+09:57:47.625 [http-nio-6060-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/lolchampion/get/1", parameters={}
+09:57:47.625 [http-nio-6060-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.LOLChampionController#getLOLChampionById(Long)
+09:57:47.635 [http-nio-6060-exec-10] INFO  com.ben.util.LoggingAspect - controller getLOLChampionById
+09:57:47.635 [http-nio-6060-exec-10] DEBUG o.s.web.client.RestTemplate - HTTP GET http://localhost:8080/leagueOfLegends/champions/1
+09:57:47.635 [http-nio-6060-exec-10] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+09:57:47.686 [http-nio-6060-exec-10] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+09:57:47.686 [http-nio-6060-exec-10] DEBUG o.s.web.client.RestTemplate - Reading to [com.ben.model.LOLChampion]
+09:57:47.686 [http-nio-6060-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+09:57:47.686 [http-nio-6060-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [LOLChampion [id=1, champName=Fizz]]
+09:57:47.686 [http-nio-6060-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+09:57:51.606 [http-nio-6060-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - PUT "/lolchampion/update/3", parameters={}
+09:57:51.606 [http-nio-6060-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.LOLChampionController#updateLOLChampionById(Long, LOLChampion)
+09:57:51.606 [http-nio-6060-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LOLChampion [id=0, champName=Ornn]]
+09:57:51.608 [http-nio-6060-exec-3] INFO  com.ben.util.LoggingAspect - controller updateLOLChampionById
+09:57:51.608 [http-nio-6060-exec-3] DEBUG o.s.web.client.RestTemplate - HTTP PUT http://localhost:8080/leagueOfLegends/champions/3
+09:57:51.608 [http-nio-6060-exec-3] DEBUG o.s.web.client.RestTemplate - Writing [LOLChampion [id=0, champName=Ornn]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+09:57:51.661 [http-nio-6060-exec-3] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+09:57:51.661 [http-nio-6060-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+09:57:51.661 [http-nio-6060-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+09:57:51.661 [http-nio-6060-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+09:57:54.330 [http-nio-6060-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/lolchampion/delete?id=1", parameters={masked}
+09:57:54.336 [http-nio-6060-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.LOLChampionController#deleteLOLChampionById(Long)
+09:57:54.336 [http-nio-6060-exec-1] INFO  com.ben.util.LoggingAspect - controller deleteLOLChampionById
+09:57:54.338 [http-nio-6060-exec-1] DEBUG o.s.web.client.RestTemplate - HTTP DELETE http://localhost:8080/leagueOfLegends/champions?id=1
+09:57:54.407 [http-nio-6060-exec-1] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+09:57:54.407 [http-nio-6060-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+09:57:54.407 [http-nio-6060-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+09:57:54.407 [http-nio-6060-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+09:57:58.626 [http-nio-6060-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/lolchampion/getall", parameters={}
+09:57:58.626 [http-nio-6060-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.LOLChampionController#getAllLOLChampion()
+09:57:58.626 [http-nio-6060-exec-4] INFO  com.ben.util.LoggingAspect - controller getAllLOLChampion
+09:57:58.626 [http-nio-6060-exec-4] DEBUG o.s.web.client.RestTemplate - HTTP GET http://localhost:8080/leagueOfLegends/champions/
+09:57:58.626 [http-nio-6060-exec-4] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+09:57:58.687 [http-nio-6060-exec-4] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+09:57:58.687 [http-nio-6060-exec-4] DEBUG o.s.web.client.RestTemplate - Reading to [java.util.List<?>]
+09:57:58.687 [http-nio-6060-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+09:57:58.687 [http-nio-6060-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[{id=4, champName=Jax}, {id=3, champName=Ornn}, {id=2, champName=Ashe}, {id=5, champName=Aatrox}]]
+09:57:58.687 [http-nio-6060-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:08:45.803 [http-nio-6060-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/valoagent/getall", parameters={}
+10:08:45.803 [http-nio-6060-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.ValoAgentController#getSoapMessage()
+10:08:45.803 [http-nio-6060-exec-6] INFO  com.ben.util.LoggingAspect - controller getSoapMessage
+10:08:45.813 [http-nio-6060-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:08:45.813 [http-nio-6060-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[ValoAgent [id=2, valoName=Jett], ValoAgent [id=3, valoName=Viper]]]
+10:08:45.817 [http-nio-6060-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:08:55.953 [http-nio-6060-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - POST "/valoagent/postAgent", parameters={}
+10:08:55.953 [http-nio-6060-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.ValoAgentController#saveValoAgent(ValoAgent)
+10:08:55.953 [http-nio-6060-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [ValoAgent [id=1, valoName=Brimstone]]
+10:08:55.953 [http-nio-6060-exec-7] INFO  com.ben.util.LoggingAspect - controller saveValoAgent
+10:08:55.973 [http-nio-6060-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:08:55.973 [http-nio-6060-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [ValoAgent [id=1, valoName=Brimstone]]
+10:08:55.973 [http-nio-6060-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:08:58.793 [http-nio-6060-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/valoagent/testsoap", parameters={}
+10:08:58.793 [http-nio-6060-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.ValoAgentController#test()
+10:08:58.793 [http-nio-6060-exec-8] INFO  com.ben.util.LoggingAspect - controller test
+10:08:58.805 [http-nio-6060-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+10:08:58.805 [http-nio-6060-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["watch this!"]
+10:08:58.805 [http-nio-6060-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:09:00.683 [http-nio-6060-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/valoagent/getall", parameters={}
+10:09:00.683 [http-nio-6060-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.ValoAgentController#getSoapMessage()
+10:09:00.683 [http-nio-6060-exec-9] INFO  com.ben.util.LoggingAspect - controller getSoapMessage
+10:09:00.692 [http-nio-6060-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:09:00.692 [http-nio-6060-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[ValoAgent [id=2, valoName=Jett], ValoAgent [id=3, valoName=Viper], ValoAgent [id=1, valoName=Brimst (truncated)...]
+10:09:00.692 [http-nio-6060-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:09:26.054 [http-nio-6060-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - PUT "/valoagent/updateAgent", parameters={}
+10:09:26.054 [http-nio-6060-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.ValoAgentController#updateValoAgent(ValoAgent)
+10:09:26.054 [http-nio-6060-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [ValoAgent [id=1, valoName=Fade]]
+10:09:26.054 [http-nio-6060-exec-10] INFO  com.ben.util.LoggingAspect - controller updateValoAgent
+10:09:26.078 [http-nio-6060-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:09:26.078 [http-nio-6060-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [ValoAgent [id=1, valoName=Fade]]
+10:09:26.078 [http-nio-6060-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:09:31.612 [http-nio-6060-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/valoagent/deleteAgent?id=1", parameters={masked}
+10:09:31.612 [http-nio-6060-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.ValoAgentController#deleteValoAgentById(Long)
+10:09:31.618 [http-nio-6060-exec-3] INFO  com.ben.util.LoggingAspect - controller deleteValoAgentById
+10:09:31.638 [http-nio-6060-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:09:31.638 [http-nio-6060-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+10:09:31.638 [http-nio-6060-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:09:36.813 [http-nio-6060-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/valoagent/getall", parameters={}
+10:09:36.814 [http-nio-6060-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.ValoAgentController#getSoapMessage()
+10:09:36.814 [http-nio-6060-exec-1] INFO  com.ben.util.LoggingAspect - controller getSoapMessage
+10:09:36.821 [http-nio-6060-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:09:36.821 [http-nio-6060-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[ValoAgent [id=2, valoName=Jett], ValoAgent [id=3, valoName=Viper]]]
+10:09:36.822 [http-nio-6060-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:43:11.057 [http-nio-6060-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/lolchampion/getall", parameters={}
+10:43:11.059 [http-nio-6060-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.LOLChampionController#getAllLOLChampion()
+10:43:11.064 [http-nio-6060-exec-2] INFO  com.ben.util.LoggingAspect - controller getAllLOLChampion
+10:43:11.068 [http-nio-6060-exec-2] DEBUG o.s.web.client.RestTemplate - HTTP GET http://localhost:8080/leagueOfLegends/champions/
+10:43:11.069 [http-nio-6060-exec-2] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+10:43:11.126 [http-nio-6060-exec-2] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+10:43:11.128 [http-nio-6060-exec-2] DEBUG o.s.web.client.RestTemplate - Reading to [java.util.List<?>]
+10:43:11.130 [http-nio-6060-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:43:11.131 [http-nio-6060-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[{id=4, champName=Jax}, {id=2, champName=Ashe}, {id=5, champName=Aatrox}, {id=1, champName=Ashe}]]
+10:43:11.132 [http-nio-6060-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:43:34.678 [http-nio-6060-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - POST "/lolchampion/new", parameters={}
+10:43:34.679 [http-nio-6060-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.LOLChampionController#saveLOLChampion(LOLChampion)
+10:43:34.680 [http-nio-6060-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LOLChampion [id=3, champName=Viktor]]
+10:43:34.681 [http-nio-6060-exec-6] INFO  com.ben.util.LoggingAspect - controller saveLOLChampion
+10:43:34.681 [http-nio-6060-exec-6] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/leagueOfLegends/postChampion
+10:43:34.681 [http-nio-6060-exec-6] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+10:43:34.681 [http-nio-6060-exec-6] DEBUG o.s.web.client.RestTemplate - Writing [LOLChampion [id=3, champName=Viktor]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+10:43:34.754 [http-nio-6060-exec-6] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+10:43:34.754 [http-nio-6060-exec-6] DEBUG o.s.web.client.RestTemplate - Reading to [com.ben.model.LOLChampion]
+10:43:34.755 [http-nio-6060-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:43:34.755 [http-nio-6060-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [LOLChampion [id=3, champName=Viktor]]
+10:43:34.755 [http-nio-6060-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:43:42.653 [http-nio-6060-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/lolchampion/getall", parameters={}
+10:43:42.653 [http-nio-6060-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.LOLChampionController#getAllLOLChampion()
+10:43:42.654 [http-nio-6060-exec-7] INFO  com.ben.util.LoggingAspect - controller getAllLOLChampion
+10:43:42.654 [http-nio-6060-exec-7] DEBUG o.s.web.client.RestTemplate - HTTP GET http://localhost:8080/leagueOfLegends/champions/
+10:43:42.654 [http-nio-6060-exec-7] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+10:43:42.712 [http-nio-6060-exec-7] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+10:43:42.712 [http-nio-6060-exec-7] DEBUG o.s.web.client.RestTemplate - Reading to [java.util.List<?>]
+10:43:42.713 [http-nio-6060-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:43:42.713 [http-nio-6060-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[{id=4, champName=Jax}, {id=2, champName=Ashe}, {id=5, champName=Aatrox}, {id=1, champName=Ashe}, {i (truncated)...]
+10:43:42.713 [http-nio-6060-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:43:54.772 [http-nio-6060-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/lolchampion/get/3", parameters={}
+10:43:54.772 [http-nio-6060-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.LOLChampionController#getLOLChampionById(Long)
+10:43:54.773 [http-nio-6060-exec-8] INFO  com.ben.util.LoggingAspect - controller getLOLChampionById
+10:43:54.773 [http-nio-6060-exec-8] DEBUG o.s.web.client.RestTemplate - HTTP GET http://localhost:8080/leagueOfLegends/champions/3
+10:43:54.773 [http-nio-6060-exec-8] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+10:43:54.829 [http-nio-6060-exec-8] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+10:43:54.830 [http-nio-6060-exec-8] DEBUG o.s.web.client.RestTemplate - Reading to [com.ben.model.LOLChampion]
+10:43:54.830 [http-nio-6060-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:43:54.830 [http-nio-6060-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [LOLChampion [id=3, champName=Viktor]]
+10:43:54.831 [http-nio-6060-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:44:18.203 [http-nio-6060-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - PUT "/lolchampion/update/1", parameters={}
+10:44:18.204 [http-nio-6060-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.LOLChampionController#updateLOLChampionById(Long, LOLChampion)
+10:44:18.205 [http-nio-6060-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LOLChampion [id=0, champName=Soraka]]
+10:44:18.205 [http-nio-6060-exec-9] INFO  com.ben.util.LoggingAspect - controller updateLOLChampionById
+10:44:18.206 [http-nio-6060-exec-9] DEBUG o.s.web.client.RestTemplate - HTTP PUT http://localhost:8080/leagueOfLegends/champions/1
+10:44:18.206 [http-nio-6060-exec-9] DEBUG o.s.web.client.RestTemplate - Writing [LOLChampion [id=0, champName=Soraka]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+10:44:18.276 [http-nio-6060-exec-9] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+10:44:18.277 [http-nio-6060-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:44:18.277 [http-nio-6060-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+10:44:18.277 [http-nio-6060-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:44:25.164 [http-nio-6060-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/lolchampion/getall", parameters={}
+10:44:25.164 [http-nio-6060-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.LOLChampionController#getAllLOLChampion()
+10:44:25.164 [http-nio-6060-exec-10] INFO  com.ben.util.LoggingAspect - controller getAllLOLChampion
+10:44:25.164 [http-nio-6060-exec-10] DEBUG o.s.web.client.RestTemplate - HTTP GET http://localhost:8080/leagueOfLegends/champions/
+10:44:25.165 [http-nio-6060-exec-10] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+10:44:25.214 [http-nio-6060-exec-10] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+10:44:25.214 [http-nio-6060-exec-10] DEBUG o.s.web.client.RestTemplate - Reading to [java.util.List<?>]
+10:44:25.214 [http-nio-6060-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:44:25.215 [http-nio-6060-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[{id=4, champName=Jax}, {id=2, champName=Ashe}, {id=5, champName=Aatrox}, {id=3, champName=Viktor},  (truncated)...]
+10:44:25.215 [http-nio-6060-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:44:38.074 [http-nio-6060-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/lolchampion/delete?id=1", parameters={masked}
+10:44:38.075 [http-nio-6060-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.LOLChampionController#deleteLOLChampionById(Long)
+10:44:38.075 [http-nio-6060-exec-3] INFO  com.ben.util.LoggingAspect - controller deleteLOLChampionById
+10:44:38.076 [http-nio-6060-exec-3] DEBUG o.s.web.client.RestTemplate - HTTP DELETE http://localhost:8080/leagueOfLegends/champions?id=1
+10:44:38.143 [http-nio-6060-exec-3] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+10:44:38.143 [http-nio-6060-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:44:38.144 [http-nio-6060-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+10:44:38.144 [http-nio-6060-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:44:44.656 [http-nio-6060-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/lolchampion/getall", parameters={}
+10:44:44.657 [http-nio-6060-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.LOLChampionController#getAllLOLChampion()
+10:44:44.657 [http-nio-6060-exec-1] INFO  com.ben.util.LoggingAspect - controller getAllLOLChampion
+10:44:44.657 [http-nio-6060-exec-1] DEBUG o.s.web.client.RestTemplate - HTTP GET http://localhost:8080/leagueOfLegends/champions/
+10:44:44.658 [http-nio-6060-exec-1] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+10:44:44.711 [http-nio-6060-exec-1] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+10:44:44.712 [http-nio-6060-exec-1] DEBUG o.s.web.client.RestTemplate - Reading to [java.util.List<?>]
+10:44:44.712 [http-nio-6060-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:44:44.712 [http-nio-6060-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[{id=4, champName=Jax}, {id=2, champName=Ashe}, {id=5, champName=Aatrox}, {id=3, champName=Viktor}]]
+10:44:44.713 [http-nio-6060-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:44:58.819 [http-nio-6060-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/valoagent/getall", parameters={}
+10:44:58.819 [http-nio-6060-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.ValoAgentController#getSoapMessage()
+10:44:58.819 [http-nio-6060-exec-4] INFO  com.ben.util.LoggingAspect - controller getSoapMessage
+10:44:58.837 [http-nio-6060-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:44:58.838 [http-nio-6060-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[ValoAgent [id=2, valoName=Jett], ValoAgent [id=1, valoName=Breach]]]
+10:44:58.839 [http-nio-6060-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:45:09.766 [http-nio-6060-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - POST "/valoagent/postAgent", parameters={}
+10:45:09.767 [http-nio-6060-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.ValoAgentController#saveValoAgent(ValoAgent)
+10:45:09.767 [http-nio-6060-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [ValoAgent [id=3, valoName=Viper]]
+10:45:09.767 [http-nio-6060-exec-5] INFO  com.ben.util.LoggingAspect - controller saveValoAgent
+10:45:09.787 [http-nio-6060-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:45:09.788 [http-nio-6060-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [ValoAgent [id=3, valoName=Viper]]
+10:45:09.788 [http-nio-6060-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:45:16.400 [http-nio-6060-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/valoagent/getall", parameters={}
+10:45:16.400 [http-nio-6060-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.ValoAgentController#getSoapMessage()
+10:45:16.400 [http-nio-6060-exec-2] INFO  com.ben.util.LoggingAspect - controller getSoapMessage
+10:45:16.408 [http-nio-6060-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:45:16.409 [http-nio-6060-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[ValoAgent [id=2, valoName=Jett], ValoAgent [id=1, valoName=Breach], ValoAgent [id=3, valoName=Viper (truncated)...]
+10:45:16.409 [http-nio-6060-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:45:26.681 [http-nio-6060-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - PUT "/valoagent/updateAgent", parameters={}
+10:45:26.682 [http-nio-6060-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.ValoAgentController#updateValoAgent(ValoAgent)
+10:45:26.682 [http-nio-6060-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [ValoAgent [id=3, valoName=Sage]]
+10:45:26.682 [http-nio-6060-exec-6] INFO  com.ben.util.LoggingAspect - controller updateValoAgent
+10:45:26.700 [http-nio-6060-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:45:26.700 [http-nio-6060-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [ValoAgent [id=3, valoName=Sage]]
+10:45:26.701 [http-nio-6060-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:45:34.865 [http-nio-6060-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/valoagent/getall", parameters={}
+10:45:34.865 [http-nio-6060-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.ValoAgentController#getSoapMessage()
+10:45:34.865 [http-nio-6060-exec-7] INFO  com.ben.util.LoggingAspect - controller getSoapMessage
+10:45:34.872 [http-nio-6060-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:45:34.873 [http-nio-6060-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[ValoAgent [id=2, valoName=Jett], ValoAgent [id=1, valoName=Breach], ValoAgent [id=3, valoName=Sage] (truncated)...]
+10:45:34.873 [http-nio-6060-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:45:43.801 [http-nio-6060-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/valoagent/deleteAgent?id=3", parameters={masked}
+10:45:43.801 [http-nio-6060-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.ValoAgentController#deleteValoAgentById(Long)
+10:45:43.801 [http-nio-6060-exec-8] INFO  com.ben.util.LoggingAspect - controller deleteValoAgentById
+10:45:43.814 [http-nio-6060-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:45:43.814 [http-nio-6060-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+10:45:43.814 [http-nio-6060-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:45:50.768 [http-nio-6060-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/valoagent/getall", parameters={}
+10:45:50.768 [http-nio-6060-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ben.controller.ValoAgentController#getSoapMessage()
+10:45:50.768 [http-nio-6060-exec-9] INFO  com.ben.util.LoggingAspect - controller getSoapMessage
+10:45:50.778 [http-nio-6060-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:45:50.778 [http-nio-6060-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[ValoAgent [id=2, valoName=Jett], ValoAgent [id=1, valoName=Breach]]]
+10:45:50.779 [http-nio-6060-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+16:26:37.393 [RMI TCP Connection(458)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+16:26:37.396 [RMI TCP Connection(458)-127.0.0.1] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+16:26:37.396 [RMI TCP Connection(458)-127.0.0.1] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b50575d, started on Mon May 09 08:51:33 EDT 2022

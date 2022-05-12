@@ -377,3 +377,36 @@ org.apache.cxf.interceptor.Fault: No binding operation info while invoking unkno
 09:12:19.699 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
 09:12:19.705 [main] INFO  c.b.SoapProviderService1Application - Started SoapProviderService1Application in 3.239 seconds (JVM running for 4.058)
 09:12:26.692 [http-nio-8081-exec-1] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service findAllValoAgents
+09:51:49.162 [http-nio-8081-exec-2] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service test
+09:51:52.467 [http-nio-8081-exec-5] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service findAllValoAgents
+09:52:06.752 [http-nio-8081-exec-6] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service saveValoAgent
+09:52:09.527 [http-nio-8081-exec-7] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service findAllValoAgents
+09:52:21.049 [http-nio-8081-exec-9] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service updateValoAgent
+09:52:28.277 [http-nio-8081-exec-10] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service findAllValoAgents
+09:52:33.004 [http-nio-8081-exec-8] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service deleteValoAgentById
+09:52:35.584 [http-nio-8081-exec-1] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service findAllValoAgents
+10:08:45.808 [http-nio-8081-exec-4] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service findAllValoAgents
+10:08:55.963 [http-nio-8081-exec-2] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service saveValoAgent
+10:08:58.798 [http-nio-8081-exec-5] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service test
+10:09:00.692 [http-nio-8081-exec-6] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service findAllValoAgents
+10:09:26.063 [http-nio-8081-exec-7] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service saveValoAgent
+10:09:31.623 [http-nio-8081-exec-9] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service deleteValoAgentById
+10:09:36.816 [http-nio-8081-exec-10] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service findAllValoAgents
+10:41:27.553 [http-nio-8081-exec-3] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service saveValoAgent
+10:41:44.524 [http-nio-8081-exec-4] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service findAllValoAgents
+10:42:08.821 [http-nio-8081-exec-2] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service updateValoAgent
+10:42:18.453 [http-nio-8081-exec-5] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service findAllValoAgents
+10:42:37.176 [http-nio-8081-exec-6] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service deleteValoAgentById
+10:42:44.070 [http-nio-8081-exec-7] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service findAllValoAgents
+10:44:58.829 [http-nio-8081-exec-10] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service findAllValoAgents
+10:45:09.771 [http-nio-8081-exec-8] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service saveValoAgent
+10:45:16.402 [http-nio-8081-exec-1] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service findAllValoAgents
+10:45:26.685 [http-nio-8081-exec-3] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service saveValoAgent
+10:45:34.867 [http-nio-8081-exec-4] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service findAllValoAgents
+10:45:43.804 [http-nio-8081-exec-2] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service deleteValoAgentById
+10:45:50.772 [http-nio-8081-exec-5] INFO  com.ben.util.LoggingAspect - SoapProviderService1 before service findAllValoAgents
+13:52:14.815 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m20s214ms343µs500ns).
+16:26:37.886 [RMI TCP Connection(440)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+16:26:37.954 [RMI TCP Connection(440)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16:26:37.961 [RMI TCP Connection(440)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16:26:37.967 [RMI TCP Connection(440)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
